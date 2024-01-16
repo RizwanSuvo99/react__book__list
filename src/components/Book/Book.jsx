@@ -4,7 +4,7 @@ import starIcon from "../../assets/star.svg";
 const Book = ({ book: { image,title, author, price, rating } }) => {
   return (
     <div className="space-y-3">
-      <div className="flex items-center justify-center rounded-md border border-[#324251]/30 bg-white p-4">
+      <div className="flex items-center justify-center rounded-md border border-[#324251]/30 bg-white p-4 min-h-[250px]">
         <img className="max-w-[144px]" src={image} alt="book name" />
       </div>
 
