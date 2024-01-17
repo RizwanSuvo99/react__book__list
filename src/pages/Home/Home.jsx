@@ -41,6 +41,20 @@ const Home = () => {
     );
     setBooksData(filteredBooks);
   };
+
+  const handleFavourite = (id) => {
+    const mappedBooks = booksData.map((book) => {
+      if (book.id === id) {
+        return {
+          ...book,
+          favourite: !book.favourite,
+        };
+      }
+      return book;
+    });
+    setBooksData(mappedBooks);
+  };
+  
   return (
     <>
       <header>
@@ -52,7 +66,7 @@ const Home = () => {
           searchText={searchText}
           setSearchText={setSearchText}
         />
-        <Books booksData={booksData} />
+        <Books booksData={booksData} handleFavourite={handleFavourite} />
       </main>
       <footer>
         <Footer />

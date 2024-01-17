@@ -3,11 +3,12 @@ export const bookData = [
     id: 1,
     image:
       "https://learning.lpi.org/pt/learning-materials/030-100/cover-030-100.pt_hu94f56909a1d89becccc213a671c54eb2_192008_600x0_resize_box_3.png",
-    title: "Web Development Essentials",
+    title: "Web Development",
     author: "Jane Doe",
     price: 49.99,
     rating: 4,
     pubYear: 2015,
+    favourite: false,
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const bookData = [
     price: 59.99,
     rating: 4.5,
     pubYear: 2017,
+    favourite: false,
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const bookData = [
     price: 39.99,
     rating: 5,
     pubYear: 2018,
+    favourite: false,
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ export const bookData = [
     price: 34.99,
     rating: 4.2,
     pubYear: 2014,
+    favourite: false,
   },
   {
     id: 5,
@@ -47,6 +51,7 @@ export const bookData = [
     price: 44.99,
     rating: 4.8,
     pubYear: 2018,
+    favourite: false,
   },
   {
     id: 6,
@@ -57,6 +62,7 @@ export const bookData = [
     price: 54.99,
     rating: 4.7,
     pubYear: 2023,
+    favourite: false,
   },
   {
     id: 7,
@@ -66,6 +72,7 @@ export const bookData = [
     price: 29.99,
     rating: 4.3,
     pubYear: 2017,
+    favourite: false,
   },
   {
     id: 8,
@@ -75,5 +82,6 @@ export const bookData = [
     price: 49.99,
     rating: 4.6,
     pubYear: 2013,
+    favourite: false,
   },
 ];
