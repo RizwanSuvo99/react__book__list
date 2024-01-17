@@ -1,4 +1,4 @@
-export const bookData = [
+const arr = [
   {
     id: 1,
     image:
@@ -7,7 +7,7 @@ export const bookData = [
     author: "Jane Doe",
     price: 49.99,
     rating: 4,
-    pubYear: 2015,
+    year: 2020,
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const bookData = [
     author: "John Smith",
     price: 59.99,
     rating: 4.5,
-    pubYear: 2017,
+    year: 1990,
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const bookData = [
     author: "Alan Johnson",
     price: 39.99,
     rating: 5,
-    pubYear: 2018,
+    year: 2020,
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const bookData = [
     author: "Emily White",
     price: 34.99,
     rating: 4.2,
-    pubYear: 2014,
+    year: 2020,
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ export const bookData = [
     author: "David Brown",
     price: 44.99,
     rating: 4.8,
-    pubYear: 2018,
+    year: 2020,
   },
   {
     id: 6,
@@ -56,7 +56,7 @@ export const bookData = [
     author: "Michael Anderson",
     price: 54.99,
     rating: 4.7,
-    pubYear: 2023,
+    year: 2020,
   },
   {
     id: 7,
@@ -65,7 +65,7 @@ export const bookData = [
     author: "Sarah Davis",
     price: 29.99,
     rating: 4.3,
-    pubYear: 2017,
+    year: 2020,
   },
   {
     id: 8,
@@ -74,6 +74,10 @@ export const bookData = [
     author: "Chris Evans",
     price: 49.99,
     rating: 4.6,
-    pubYear: 2013,
+    year: 2020,
   },
 ];
+
+console.log(
+  arr.sort((a, b) => (b.title.toUpperCase() > a.title.toUpperCase() ? -1 : 1))
+);

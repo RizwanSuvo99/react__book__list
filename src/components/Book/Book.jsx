@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import starIcon from "../../assets/star.svg";
-const Book = ({ book: { image,title, author, price, rating } }) => {
+const Book = ({ book: { image,title, author, price, rating,pubYear } }) => {
   return (
     <div className="space-y-3">
       <div className="flex items-center justify-center rounded-md border border-[#324251]/30 bg-white p-4 min-h-[250px]">
@@ -9,7 +9,7 @@ const Book = ({ book: { image,title, author, price, rating } }) => {
       </div>
 
       <div className="space-y-3">
-        <h4 className="text-lg font-bold lg:text-xl">{title}</h4>
+        <h4 className="text-lg font-bold lg:text-xl">{`${title} ${pubYear}`}</h4>
         <p className="text-xs lg:text-sm">
           By : <span>{author}</span>
         </p>

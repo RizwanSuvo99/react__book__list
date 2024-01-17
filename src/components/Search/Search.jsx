@@ -1,4 +1,5 @@
-const Search = () => {
+/* eslint-disable react/prop-types */
+const Search = ({ handleSearch, searchText, setSearchText }) => {
   return (
     <section className="mb-8 lg:mb-10 mx-auto max-w-7xl">
       <div className="mx-auto flex items-end justify-between max-md:max-w-[95%] max-md:flex-col max-md:items-start max-md:space-y-4">
@@ -8,11 +9,13 @@ const Search = () => {
             Trending Books of the Year
           </h2>
 
-          <form>
+          <form onSubmit={handleSearch}>
             <div className="flex">
               <div className="relative w-full overflow-hidden rounded-lg border-2 border-[#1C4336] text-[#1C4336] md:min-w-[380px] lg:min-w-[440px]">
                 <input
                   type="search"
+                  value={searchText}
+                  onChange={(e) => setSearchText(e.target.value)}
                   id="search-dropdown"
                   className="z-20 block w-full bg-white px-4 py-2.5 pr-10 text-[#1C4336] placeholder:text-[#1C4336] focus:outline-none"
                   placeholder="Search Book"
@@ -49,6 +52,7 @@ const Search = () => {
         <div className="flex items-stretch space-x-3">
           <select
             className="cursor-pointer rounded-md border px-4 py-2 text-center text-gray-600"
+            onChange={handleSearch}
             name="sortBy"
             id="sortBy"
           >
